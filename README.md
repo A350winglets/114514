@@ -18,5 +18,5 @@
 ### 什么路障破坏者（恼）
 <img src="https://github.com/A350winglets/114514/assets/129929614/9b0a5539-3dfa-46b7-aba8-36b08a213439" width="1000"/>
 
-## <img src="https://github.com/A350winglets/114514/assets/129929614/ee02e72d-faa0-4cbd-a3f5-0baf2974ffff" width="40"/> Winglets
+## <img src="https://github.com/A350winglets/114514/assets/129929614/ee996d07-07de-44f8-bae9-c7de38c7b717" width="25"/> Winglets
 你猜这是干嘛的。
