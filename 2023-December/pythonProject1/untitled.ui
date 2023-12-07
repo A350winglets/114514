@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>120</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户名</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>密码</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>130</y>
+      <width>360</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;微软雅黑&quot;;
+border-radius: 5px;
+border: 1px groove rgb(223, 223, 223);
+background-color: rgb(251, 251, 253);
+border-bottom-width: 1px;
+border-bottom-color: rgb(136, 136, 136);
+border-style: solid;
+selection-background-color: rgb(19, 77, 231);
+}
+
+QLineEdit:focus {
+font: 11pt &quot;微软雅黑&quot;;
+border-radius: 5px;
+border: 1px groove rgb(223, 223, 223);
+background-color: rgb(251, 251, 253);
+border-bottom-width: 2px;
+border-bottom-color: rgb(19, 77, 231);
+border-style: solid;
+selection-background-color: rgb(19, 77, 231);
+}
+</string>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>170</y>
+      <width>360</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit{
+font: 11pt &quot;微软雅黑&quot;;
+border-radius: 5px;
+border: 1px groove rgb(223, 223, 223);
+background-color: rgb(251, 251, 253);
+border-bottom-width: 1px;
+border-bottom-color: rgb(136, 136, 136);
+border-style: solid;
+selection-background-color: rgb(19, 77, 231);
+lineedit-password-mask-delay: 1000
+}
+
+QLineEdit:focus {
+font: 11pt &quot;微软雅黑&quot;;
+border-radius: 5px;
+border: 1px groove rgb(223, 223, 223);
+background-color: rgb(251, 251, 253);
+border-bottom-width: 2px;
+border-bottom-color: rgb(19, 77, 231);
+border-style: solid;
+selection-background-color: rgb(19, 77, 231);
+lineedit-password-mask-delay: 1000
+}
+</string>
+    </property>
+    <property name="maxLength">
+     <number>8</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+    <property name="dragEnabled">
+     <bool>false</bool>
+    </property>
+    <property name="cursorMoveStyle">
+     <enum>Qt::LogicalMoveStyle</enum>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>230</y>
+      <width>132</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>哈哈哈哈</string>
+    </property>
+    <property name="toolTipDuration">
+     <number>-1</number>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+font: 11pt &quot;微软雅黑&quot;;
+color: rgb(26, 26, 26);
+border-radius: 5px; 
+border: 1px groove rgb(223, 223, 223);
+background-color: rgb(251, 251, 253);
+border-style: solid
+}
+
+QPushButton:hover {
+font: 11pt &quot;微软雅黑&quot;;
+color: rgb(26, 26, 26);
+border-radius: 5px; 
+border: 1px groove rgb(223, 223, 223);
+background-color: rgb(246, 246, 246);
+border-style: solid
+}
+
+QPushButton:pressed {
+font: 11pt &quot;微软雅黑&quot;;
+color: rgb(136, 136, 136);
+border-radius: 5px; 
+border: 1px groove rgb(223, 223, 223);
+background-color: rgb(240, 240, 240);
+border-style: solid
+}
+</string>
+    </property>
+    <property name="text">
+     <string>clear all</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLCDNumber" name="lcdNumber">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>250</y>
+      <width>301</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="smallDecimalPoint">
+     <bool>false</bool>
+    </property>
+    <property name="digitCount">
+     <number>8</number>
+    </property>
+    <property name="segmentStyle">
+     <enum>QLCDNumber::Flat</enum>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>510</y>
+      <width>271</width>
+      <height>8</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>8</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar::chunk {
+border-radius:4px;
+background: rgb(19, 77, 231);
+}
+
+QProgressBar#progressBar {
+height: 8px;
+border-radius: 4px;
+background: rgb(251, 251, 253);
+}</string>
+    </property>
+    <property name="maximum">
+     <number>100</number>
+    </property>
+    <property name="value">
+     <number>50</number>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="textVisible">
+     <bool>false</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+    <property name="invertedAppearance">
+     <bool>false</bool>
+    </property>
+    <property name="textDirection">
+     <enum>QProgressBar::TopToBottom</enum>
+    </property>
+    <property name="format">
+     <string>%p%</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="geometry">
+     <rect>
+      <x>269</x>
+      <y>129</y>
+      <width>120</width>
+      <height>103</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>主菜单</string>
+    </property>
+    <addaction name="actionqi"/>
+    <addaction name="separator"/>
+    <addaction name="action1"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action1">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>关闭</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionqi">
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>119</x>
+     <y>271</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>146</x>
+     <y>209</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>lineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>104</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>174</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_2</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>lcdNumber</receiver>
+   <slot>display(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>385</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>470</x>
+     <y>323</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action1</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionqi</sender>
+   <signal>triggered()</signal>
+   <receiver>lineEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>168</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionqi</sender>
+   <signal>triggered()</signal>
+   <receiver>lineEdit_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>280</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
